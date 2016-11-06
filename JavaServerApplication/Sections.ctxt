@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=cls
+comment0.target=Sections(java.util.List)
+comment1.params=
+comment1.target=Sections()
+comment2.params=
+comment2.target=java.util.List\ getClasses()
+comment2.text=\r\n\ Return\ a\ list\ of\ classes\ in\ that\ section\r\n
+comment3.params=newId
+comment3.target=void\ setCourseId(int)
+comment4.params=newSec
+comment4.target=void\ setSectionId(int)
+comment5.params=newSecNum
+comment5.target=void\ setSectionNum(int)
+comment6.params=newProf
+comment6.target=void\ setProf(java.lang.String)
+comment7.params=newop
+comment7.target=void\ setOpen(boolean)
+comment8.params=
+comment8.target=int\ getId()
+comment9.params=
+comment9.target=int\ getCourseId()
+numComments=10

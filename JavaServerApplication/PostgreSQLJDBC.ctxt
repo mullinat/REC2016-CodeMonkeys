@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.util.List\ getCourses()
+comment0.text=\r\n\ Reads\ in\ the\ database\ from\ the\ SQL\ and\ saves\ them\ in\ a\ list\ (of\ courses)\r\n\ @return\ List\ <courses>\ -\ a\ list\ of\ courses\ (that\ contain\ their\ respective\ section\ ids\ and\ classes)\r\n
+comment1.params=
+comment1.target=int\ getClassesNumber()
+comment1.text=\r\n\ Returns\ the\ number\ of\ classes\ in\ total\ in\ the\ database\r\n\ @return\ \ int\ -\ the\ number\ classes\ in\ the\ database\r\n
+comment2.params=
+comment2.target=int\ getSectionsNumber()
+comment2.text=\r\n\ Returns\ the\ number\ of\ sectins\ in\ total\ in\ the\ database\r\n\ @return\ \ int\ -\ the\ number\ sections\ in\ the\ database\r\n
+numComments=3

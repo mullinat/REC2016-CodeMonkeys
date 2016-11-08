@@ -183,6 +183,10 @@
         }
     }
 </script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <head>
     <title style="width:864px; text-align: center;">UniversityOfTechnology</title>
@@ -194,32 +198,29 @@
     </style>
 
     <body style="width:864px; text-align: center;">
-        <h3>UniversityOfTechnology Couse Selection</h3>
-        <form id="frm1" action="form_action.asp">
-            Username: <input type="text" name="fname"><br> Password: <input type="text" name="lname"><br><br>
-            <input type="button" onclick="myFunction()" value="Submit">
-        </form>
-        <p class="test" style="width:864px; text-align: center;">
-            Text in this colour if for texting<br> These are some testing usernames and passwords<br> user = user1<br> user = user2<br> user = user3<br> pass = password<br>
-        </p>
-        <div id="demo" style="width:864px; text-align: center;">UniversityOfTechnology</div>
+        <div class="container">
+            <h3>UniversityOfTechnology Couse Selection</h3>
+            <form id="frm1" action="form_action.asp">
+                Username: <input type="text" name="fname"><br> Password: <input type="text" name="lname"><br><br>
+                <input type="button" onclick="myFunction()" value="Submit">
+            </form>
+            <p class="test" style="width:864px; text-align: center;">
+                Text in this colour if for texting<br> These are some testing usernames and passwords<br> user = user1<br> user = user2<br> user = user3<br> pass = password<br>
+            </p>
+            <div id="demo" style="width:864px; text-align: center;">UniversityOfTechnology</div>
+            <div style="width:864px; text-align: center;">
+                <p>Click Add by Course ID or Couse Code</p>
+                <p>Click more than once for multiple courses</p>
+                <p>Click SEND when done</p>
+                <button onclick="nameFunction('myForm')">Add Course By Course ID</button><br>
+                <button onclick="textareaFunction('myForm')">Add Course By Couse Code</button><br>
+                <button onclick="resetElements('myForm')">Reset</button><br>
+                <span id="myForm"></span>
+                <br><br><br>
+                <button onclick="PrintInputs();">SEND</button><br>
+            </div>
+        </div>
     </body>
 </head>
-
-
-<div style="width:864px; text-align: center;">
-    <p>Click Add by Course ID or Couse Code</p>
-    <p>Click more than once for multiple courses</p>
-    <p>Click SEND when done</p>
-    <button onclick="nameFunction('myForm')">Add Course By Course ID</button><br>
-    <button onclick="textareaFunction('myForm')">Add Course By Couse Code</button><br>
-    <button onclick="resetElements('myForm')">Reset</button><br>
-    <span id="myForm"></span>
-    <br><br><br>
-    <button onclick="PrintInputs();">SEND</button><br>
-</div>
-
-
-</body>
 
 </html>

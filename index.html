@@ -44,37 +44,15 @@
         }
         if (x.elements[0].value == "user1" || x.elements[0].value == "user2" || x.elements[0].value == "user3") {
             document.getElementById("demo").innerHTML = "CORRECT USERNAME"; //text;
+            document.getElementById("courseSelector").style = "";
         } else {
             document.getElementById("demo").innerHTML = "Incorrect Username"; //text;
+            document.getElementById("courseSelector").style = "display:none;";
         }
     }
 
     function CourseIDForm() {
         document.getElementById("demo").innerHTML = "Please Sign Up Below"; //text;
-        //window.location.href = './CouseIDSelection';
-        /*
-        if (ActiveCourseIDForm == false) {
-            //CREATE THE SECOND FORM
-
-            var CouseIDForm = document.createElement("form");
-            CouseIDForm.setAttribute('method', "post");
-
-            var CouseIDInput = document.createElement("input"); //input element, text
-            CouseIDInput.setAttribute('type', "text");
-            CouseIDInput.setAttribute('name', "username");
-
-            var CouseIDSubmitButton = document.createElement("input"); //input element, Submit button
-            CouseIDSubmitButton.setAttribute('type', "submit");
-            CouseIDSubmitButton.setAttribute('value', "Submit");
-
-            CouseIDForm.appendChild(CouseIDInput);
-            CouseIDForm.appendChild(CouseIDSubmitButton);
-
-            document.getElementsByTagName('body')[0].appendChild(CouseIDForm);
-
-        }
-        document.getElementById("demo").innerHTML = "Input CourseID Below"; //text;
-        */
         ActiveCourseIDForm = true;
 
     }
@@ -194,6 +172,7 @@
             background-color: black;
         }
     </style>
+
     <body>
         <div class="container">
             <div class="text-center">
@@ -217,7 +196,8 @@
                 <p class="test">
                     Text in this colour if for texting<br> These are some testing usernames and passwords<br> user = user1<br> user = user2<br> user = user3<br> pass = password<br>
                 </p>
-                <div id="demo">UniversityOfTechnology</div>
+                <h1 id="demo">UniversityOfTechnology</h1>
+                <div id="courseSelector" style="display:none;">
                 <p>Click Add by Course ID or Couse Code</p>
                 <p>Click more than once for multiple courses</p>
                 <p>Click SEND when done</p>
@@ -227,6 +207,7 @@
                 <span id="myForm"></span>
                 <br><br><br>
                 <button onclick="PrintInputs();">SEND</button><br>
+              </div>
             </div>
         </div>
     </body>

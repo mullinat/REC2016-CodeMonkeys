@@ -123,7 +123,6 @@
         document.getElementById(elementID).remove();
     }
 
-
     function nameFunction(elementID) {
         var r = document.createElement('span');
         var y = document.createElement("INPUT");
@@ -145,7 +144,6 @@
         linebreak = document.createElement("br");
         document.getElementById(elementID).appendChild(linebreak);
     }
-
 
     function textareaFunction(elementID) {
         var r = document.createElement('span');
@@ -196,19 +194,30 @@
             background-color: black;
         }
     </style>
-
-    <body style="width:864px; text-align: center;">
+    <body>
         <div class="container">
-            <h3>UniversityOfTechnology Couse Selection</h3>
-            <form id="frm1" action="form_action.asp">
-                Username: <input type="text" name="fname"><br> Password: <input type="text" name="lname"><br><br>
-                <input type="button" onclick="myFunction()" value="Submit">
-            </form>
-            <p class="test" style="width:864px; text-align: center;">
-                Text in this colour if for texting<br> These are some testing usernames and passwords<br> user = user1<br> user = user2<br> user = user3<br> pass = password<br>
-            </p>
-            <div id="demo" style="width:864px; text-align: center;">UniversityOfTechnology</div>
-            <div style="width:864px; text-align: center;">
+            <div class="text-center">
+                <h3>UniversityOfTechnology Couse Selection</h3>
+                <form id="frm1" action="form_action.asp" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputUsername" class="col-sm-2 control-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="fname" class="form-control" id="inputUsername" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" name="lname" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="myFunction()" class="btn btn-primary">Login</button>
+                </form>
+                <p class="test">
+                    Text in this colour if for texting<br> These are some testing usernames and passwords<br> user = user1<br> user = user2<br> user = user3<br> pass = password<br>
+                </p>
+                <div id="demo">UniversityOfTechnology</div>
                 <p>Click Add by Course ID or Couse Code</p>
                 <p>Click more than once for multiple courses</p>
                 <p>Click SEND when done</p>

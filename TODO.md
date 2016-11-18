@@ -1,3 +1,5 @@
+None of the shit is working I either need to get the code of the
+  origional chat socket.io example or rever a commit.
 Upgrade the users.json to be a SQL database insead of a JSON file.
 Upgrade the server to use encryption point to point.
 Use correct Log In Procedules so the system can not be hacked.

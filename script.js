@@ -1,12 +1,13 @@
 var ActiveCourseIDForm = false;
 var socket = io();
+console.log("IS THE SCRIPT WORKING");
 socket.on('check password', function(msg) {
     console.log("MESSAGE RECIEVED");
     document.getElementById("demo").innerHTML = "PLEASE ENTER CORRECT USER";
     console.log("msg = ", msg);
     if (msg == "CORRECT") {
         document.getElementById("demo").innerHTML = "PLEASE CHOOSE A COURSE BELOW";
-        //CourseIDForm();
+        CourseIDForm();
     }
 });
 

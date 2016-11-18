@@ -16,6 +16,9 @@ console.log("user3 = " + user_database["user3"]);
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + './script.js');
+});
 //SOCKET IO AND FORM STUFF
 io.on('connection', function(socket) {
     console.log("SOMEONE CONNECTED");

@@ -19,10 +19,10 @@ Prerequisits
 
 To run the server navigate to this folder in power shell run
 
-  npm install
+  npm install<br>
   nodejs server.js
 
 alternatively this may work if there are issures
 
-  npm install
+  npm install<br>
   node server.js
